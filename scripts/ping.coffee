@@ -9,7 +9,7 @@
 
 module.exports = (robot) ->
   robot.respond /PING$/i, (msg) ->
-    msg.send "PONG"
+    msg.send "Right back at you, #{msg.message.user.name}"
 
   robot.respond /ADAPTER$/i, (msg) ->
     msg.send robot.adapterName
@@ -21,6 +21,7 @@ module.exports = (robot) ->
     msg.send "Server time is: #{new Date()}"
 
   robot.respond /DIE$/i, (msg) ->
-    msg.send "Goodbye, cruel world."
-    process.exit 0
+    sender = msg.message.user.name
+    msg.send "/me punches #{sender} in the face."
+    # process.exit 0
 
