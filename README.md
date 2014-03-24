@@ -1,4 +1,14 @@
 # Hubot
+TL; DR You will need "newer" versions of nodejs and npm to run this. If you're on Ubuntu, follow the instructions below to get a recent release of nodejs and npm:
+
+    sudo apt-get update
+    sudo apt-get install -y python-software-properties python g++ make
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs
+
+After that, run `npm install` in the root directory to install all dependencies. Run `bin/hubot --name <any name` to test the bot in a shell as explained below.
+
 
 This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
 
